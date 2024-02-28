@@ -30,9 +30,10 @@
     <!-- ======= Header ======= -->
     <header id="header">
       <div class="container">
-        <h1><a href="index.html">Rizky Andika</a></h1>
-        <h2>Junior Programmer | Web Developer | Laravel Developer</h2>
-
+        <h1><a href="index.html"><span id="element"></span></a></h1>
+        <div>
+          <h2>I'm <span id="elements"></span></h2>
+        </div>
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link active" href="#header">Home</a></li>
@@ -195,20 +196,16 @@
             <div class="resume-item">
               <h4>Junior Programmer</h4>
               <p>PT Probindo Artika Jaya</p>
-              <h5>2022 - Present</h5>
+              <h5>2022 - 2023</h5>
               <p><em>Bintaro, Jakarta Selatan</em></p>
               <p>
                 <ul>
-                  <li>
-                    Responsible for monitoring and resolving bugs in the Travel Management System application from the database.
-                  </li>
-                  <li>Perform testing for Travel Management System and SKHP applications.</li>
-                  <li>Perform application development for database management with CRUD.</li>
-                  <li>
-                    Perform application development for UI (User Interface) display.
-                  </li>
-                  <li>Creating a company profile application for PT Republik Solusi.</li>
-                  <li>Create SRS (Software Requirement Specification) application documentation for users.</li>
+                  <li>Perform maintenance on one of the client's projects.</li>
+                  <li>Follow up on problems that occur in client applications.</li>
+                  <li>Build a company profile application for PT Republik Solusi.</li>
+                  <li> Create application documentation to be delivered to users.</li>
+                  <li> Develop UI (User Interface) application features.</li>
+                  <li>SQL database management.</li>
                   </ul>
                 </p>
               </div>
@@ -220,36 +217,25 @@
                 <p><em>Kab Tangerang, Banten</em></p>
                 <p>
                   <ul>
+                    <li>Building robotics systems.</li>
                     <li>Teach students about understanding robotics.</li>
-                    <li>
-                      Helping students research and test robotics.
-                    </li>
-                    <li>
-                      Teaching students in robotics manufacturing.
-                    </li>
-                    <li>
-                      Performing maintenance and development of robotics.
-                    </li>
+                    <li>Helping students research and test robotics.</li>
+                    <li>Teaching students in robotics manufacturing.</li>
+                    <li>Performing maintenance and development of robotics.</li>
                   </ul>
                 </p>
               </div>
 
               <div class="resume-item">
-                <h4>Building a Robotics System</h4>
+                <h4> Robotics System Project</h4>
                 <p>Gunadarma University</p>
                 <h5>2023</h5>
                 <p><em>Kab Tangerang, Banten</em></p>
                 <p>
                   <ul>
-                    <li>
-                      Creating an IoT-based money safe system. 
-                    </li>
-                    <li>
-                      Creating an IoT-based automatic plant watering system.
-                    </li>
-                    <li>
-                      Creating an IoT-based fire and LPG gas leakage prevention system.
-                    </li>
+                    <li>Building an IoT-based money safe system.</li>
+                    <li>Building an IoT-based automatic plant watering system.</li>
+                    <li> Building an IoT-based fire and LPG gas leakage prevention system.</li>
                   </ul>
                 </p>
               </div>
@@ -525,6 +511,25 @@
 
       <!-- Template Main JS File -->
       <script src="assets/js/main.js"></script>
+
+      <!-- Text Animation -->
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+      <script>
+        var typed = new Typed('#element', {
+          strings: ['Rizky Andika'],
+          typeSpeed: 100,
+        });
+      </script>
+
+      <script>
+        var typed = new Typed('#elements', {
+          strings: ['Junior Programmer', 'Web Developer', 'Laravel Developer'],
+          typeSpeed: 100,
+          backSpeed: 50,
+          loop: true
+        });
+      </script>
 
     </body>
 
